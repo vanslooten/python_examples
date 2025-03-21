@@ -1,2 +1,2 @@
 # python_examples
-Collection of Python_examples
+Collection of Python examples
