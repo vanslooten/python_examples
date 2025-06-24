@@ -94,6 +94,7 @@ def update_graph(selected_continent, min_population):
     filtered_data = data[(data['continent'] == selected_continent) & (data['pop'] >= min_population)].copy()
         
     # Create a scatter plot, passing pop_formatted as text
+    # added custom_data to include human-friendly formatted population in hover box, see https://plotly.com/python/hover-text-and-formatting/
     fig = px.scatter(
         filtered_data,
         x='gdpPercap',
@@ -136,4 +137,3 @@ if __name__ == '__main__':
 # Step 8: Test the Dashboard
 # Open a web browser and go to http://127.0.0.1:8050/
 # to view the interactive dashboard.
-
